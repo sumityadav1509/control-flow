@@ -1,19 +1,13 @@
 # 🚨 Don't change the code below 👇
-height = input("enter your height in m: ")
-weight = input("enter your weight in kg: ")
+age = input("What is your current age?")
 # 🚨 Don't change the code above 👆
 
 #Write your code below this line 👇
+total_days=(90*365)-int(age)
+# print(total_days) 
+total_weeks=(52*90)-int(age)
+# print(total_weeks)
+total_month=(90*12)-int(age)
+# print(total_month) 
 
-bmi= int(weight)/float(height)**2
-bmi_as_integer=int(bmi)
-print(bmi_as_integer) 
-
-
-
-
-
-
-
-
-
+print(f"You have {total_days} days , {total_weeks} weeks , {total_month} months remaining ")
