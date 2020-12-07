@@ -1,13 +1,13 @@
-# 🚨 Don't change the code below 👇
-age = input("What is your current age?")
-# 🚨 Don't change the code above 👆
+# If the bill was $150.00 , split between 5 people , with 12% tip . 
+# Each person should pay (150/5)*1.12 
+# Round the result to 2 Decimal places = 33.66 
 
-#Write your code below this line 👇
-total_days=(90*365)-int(age)
-# print(total_days) 
-total_weeks=(52*90)-int(age)
-# print(total_weeks)
-total_month=(90*12)-int(age)
-# print(total_month) 
+print("Welcome to the tip calculator") 
+bill = float(input("What is the bill amount ? $"))
+tip = int(input("What percentage tip you want to give ? "))
+people = int(input("Number of people ? "))
 
-print(f"You have {total_days} days , {total_weeks} weeks , {total_month} months remaining ")
+total_amount = bill+(bill*tip/100)
+each_person = total_amount/people
+final_amount= round(each_person,2) 
+print(f"Each person should pay: $ {final_amount}") 
